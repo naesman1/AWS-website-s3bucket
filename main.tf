@@ -11,7 +11,7 @@ variable "aws_region" {
 
 # Genera un nombre de bucket único en cada ejecución 
 resource "random_pet" "bucket_name" {
-  prefix    = "kcmikelab"
+  prefix    = "mikelab"
   separator = "-"
   length    = 2
 }
@@ -41,7 +41,7 @@ resource "aws_s3_bucket" "kp_bt_s3_website_static_bucket" {
 
   tags = {
     Name    = "Mikelab S3 Static Website Bucket"
-    Project = "KC Mikelab AWS"
+    Project = "Mikelab AWS"
   }
 }
 
@@ -151,4 +151,5 @@ output "website_url" {
 output "bucket_final_name" {
   value       = random_pet.bucket_name.id
   description = "El nombre único generado para el bucket S3"
+
 }
