@@ -1,5 +1,5 @@
-# 🚀 Práctica Final Keepcoding AWS: Website Estático con Terraform en S3
-Este repositorio contiene la solución a la Práctica Final del Bootcamp de AWS de Keepcoding. Se utiliza Terraform para desplegar un sitio web estático simple alojado en un bucket de AWS S3.
+# 🚀 Práctica AWS: Website Estático con Terraform en S3
+Este repositorio contiene la solución a la Práctica Final del Bootcamp de AWS. Se utiliza Terraform para desplegar un sitio web estático simple alojado en un bucket de AWS S3.
 
 La plantilla utiliza:
 
@@ -30,8 +30,8 @@ Sigue estos pasos en tu terminal para desplegar la infraestructura.
 Clona este repositorio de GitHub y navega al directorio del proyecto:
 
 ````
-git clone https://github.com/KeepCodingCloudDevops12/miguel-narvaiz-AWS.git
-cd miguel-narvaiz-AWS
+git clone https://github.com/naesman1/AWS-website-s3bucket.git
+cd AWS-website-s3bucket
 ````
 
 2. Configuración de la Región (Nota Importante)
@@ -79,3 +79,4 @@ Para eliminar todos los recursos creados por esta práctica y evitar costos en t
 terraform destroy
 ````
 Confirma con **yes**.
+
