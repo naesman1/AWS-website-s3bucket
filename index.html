@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keepcoding AWS - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+</head>
+<body>
+    <header class="container">
+        <hgroup>
+            <h1>🎉 ¡Práctica Final AWS Exitosa! 🎉</h1>
+            <h2>Sitio Web Estático Desplegado con Terraform y S3</h2>
+        </hgroup>
+    </header>
+    
+    <main class="container">
+        <section>
+            <article>
+                <p>¡Hola **Mikelab** y **Keepcoding**!</p>
+                <p>Este es el resultado final del despliegue automatizado en la nube de AWS.</p>
+                
+                <button onclick="alert('¡La práctica funciona correctamente!')">
+                    Verificar Despliegue 🚀
+                </button>
+                
+
+            </article>
+        </section>
+        
+        <p><a href="#" data-theme-switcher="dark">Cambiar a Modo Oscuro</a></p>
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+
+            document.querySelectorAll('[data-theme-switcher]').forEach(switcher => {
+                switcher.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const newTheme = e.target.getAttribute('data-theme-switcher');
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
